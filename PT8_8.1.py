@@ -5,3 +5,4 @@ def main():
     i = int(input())
     for counter in range(i):
         print(dummy)
+        print("Loop Completed!")
