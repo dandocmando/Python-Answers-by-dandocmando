@@ -1,7 +1,7 @@
 import time
 
 def l():
-    print("This program checks that a given character is in a given string")
+    print("This program checks if a given character is in a given string")
     print()
     time.sleep(1)
     print("Input a String:")
