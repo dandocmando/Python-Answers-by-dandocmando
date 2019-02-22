@@ -5,3 +5,4 @@ def l():
     print(lst)
     for i in lst:
         print(i**2)
+        print("test")
