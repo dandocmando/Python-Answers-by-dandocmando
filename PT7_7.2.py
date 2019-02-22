@@ -24,12 +24,9 @@ def l():
     if tpe =='H':
         tme = dst/highway
         print("It will take an estimated {0} hours to reach your destination {1} KM/s away at a speed of {2}KM/h.".format(round(tme, 2), dst, highway))
-
-
     elif tpe =='R':
         tme = dst/road
         print("It will take an estimated {0} hours to reach your destination {1} KM/s away at a speed of {2}KM/h.".format(round(tme, 2), dst, road))
-
     elif tpe =='T':
         tme = dst/road
         print("It will take an estimated {0} hours to reach your destination {1} KM/s away at a speed of {2}KM/h.".format(round(tme, 2), dst, town))
@@ -37,4 +34,4 @@ def l():
         tme = dst/spaceship
         print("It will take an estimated {0} hours to reach your destination {1} KM/s away at a speed of {2}KM/h.".format(round(tme, 2), dst, spaceship))
     else:
-        print("You didn't select a type of Road")
+        print("You didn't select a type of road, Idiot!")
