@@ -1,13 +1,48 @@
 import time
 
 def l():
-    print("This program will ask you to input a list of numbers and find the average of those numbers.")
+
+    print("This program will ask you to input 6 animal names and then ask if you would like the list reversed or not.")
     print()
-    time.sleep(1)
-    print("Please input your list of numbers with a space in-between each")
+    time.sleep(0.5)
+    print("Input 6 animal names:")
+
     arr = input()
-    lst = list(map(int,arr.split(' ')))
-    avg = sum(lst) / float(len(lst))
+    lst = list(map(str,arr.split( )))
+    le = len(lst)
+    if le < 6:
+        print("You haven't entered 6 animals yet, please add {0} more!".format(6-le))
+        arr2 = input()
+        lst2 = list(map(str,arr2.split( )))
+        lst.extend(lst2)
+        print(lst)
+
+    lstr = lst[::-1]
     print()
-    time.sleep(1)
-    print("The average of your list of numbers is {0}".format(avg))
+    print("Would you like the list reversed or not?")
+    yn = input()
+    print()
+    if yn == 'no':
+        print("This is your list:")
+        for le in lst:
+            print(le)
+            time.sleep(0.5)
+
+    elif yn =="yes":
+        print('This is your list reversed:')
+        for le in lstr:
+            print(le)
+            time.sleep(0.5)
+
+    else:
+        print("You didn't select either option, so here is both:")
+        print()
+        print("Normal list:")
+        for le in lst:
+            print(le)
+            time.sleep(0.5)
+        print()
+        print("Reversed list:")
+        for le in lstr:
+            print(le)
+            time.sleep(0.5)
