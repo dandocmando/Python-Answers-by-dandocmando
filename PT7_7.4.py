@@ -26,12 +26,12 @@ def l():
 
     if mn == 2:
         print()
-        print("There are 28 days in {0}".format(lst[mn-1]))
+        print("There are 28 days in {0}.".format(lst[mn-1]))
 
     elif mn in (4,6,9,11):
         print()
-        print("There are 30 days in {0}".format(lst[mn-1]))
+        print("There are 30 days in {0}.".format(lst[mn-1]))
 
     elif mn in (1,3,5,7,8,10):
         print()
-        print("There are 31 days in {0}".format(lst[mn-1]))
+        print("There are 31 days in {0}.".format(lst[mn-1]))
